@@ -12,7 +12,12 @@ function App() {
   return (
     <>
       <div>
-        <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
+        <a
+          href='https://vitejs.dev'
+          target='_blank'
+          rel='noreferrer'
+          style={{ width: '100px', height: '100px' }}
+        >
           <img
             src={viteLogo}
             className='logo'
