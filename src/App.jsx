@@ -6,14 +6,19 @@ import reactLogo from './assets/react.svg'
 
 import './App.css'
 
-function App () {
+function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
         <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
+          <img
+            src={viteLogo}
+            className='logo'
+            alt='Vite logo'
+            style={{ width: '100px', height: '100px' }}
+          />
         </a>
         <a href='https://react.dev' target='_blank' rel='noreferrer'>
           <img src={reactLogo} className='logo react' alt='React logo' />

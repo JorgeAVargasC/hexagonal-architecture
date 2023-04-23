@@ -1,7 +1,5 @@
 // example imports hooks, images, services, config, atoms, recoil, layouts, components, pages, routes, utils, icons, docs
 
-import React from 'react'
-
 import config from '../config/config.js'
 import config2 from '@/config/config.js'
 
@@ -43,5 +41,5 @@ import something3, {
   Cfile,
   Dfile,
   Efile,
-  Zfile
+  Zfile,
 } from '../something'
