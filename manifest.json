@@ -15,13 +15,12 @@
     {
       "src": "favicon.ico",
       "type": "image/x-icon",
-      "sizes": "32x32 64x64 128x128 256x256"
+      "sizes": "100x100"
     }
   ],
   "start_url": "/",
   "background_color": "#3367D6",
   "display": "standalone",
-  "scope": "/",
   "theme_color": "#3367D6",
   "description": "DESCRIPTION MANIFEST"
 }

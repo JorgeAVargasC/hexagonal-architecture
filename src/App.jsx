@@ -1,10 +1,6 @@
 import { useState } from 'react'
 
-import viteLogo from '../../../../../vite.svg'
-
 import reactLogo from './assets/react.svg'
-
-import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,14 +13,7 @@ function App() {
           target='_blank'
           rel='noreferrer'
           style={{ width: '100px', height: '100px' }}
-        >
-          <img
-            src={viteLogo}
-            className='logo'
-            alt='Vite logo'
-            style={{ width: '100px', height: '100px' }}
-          />
-        </a>
+        />
         <a href='https://react.dev' target='_blank' rel='noreferrer'>
           <img src={reactLogo} className='logo react' alt='React logo' />
         </a>
