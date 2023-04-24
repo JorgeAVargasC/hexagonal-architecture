@@ -12,8 +12,6 @@ module.exports = {
   ],
   plugins: ['react', 'simple-import-sort'],
   rules: {
-    'linebreak-style': ['error', 'unix'],
-    'no-console': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
     'no-unused-vars': 'warn',
