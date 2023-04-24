@@ -30,7 +30,7 @@ export default function CoursesRoutes () {
       <Route path='/' element={<CoursesLayout />}>
         {coursesRoutes.map((route, index) => (
           <Route key={index} path={route.path} element={
-            <Suspense fallback={<div className='text-sky-600 h-96 text-9xl'>Loading...</div>}>
+            <Suspense fallback={<div className='text-sky-600 h-96 text-9xl'>COURSES LOADING...</div>}>
               {route.element}
             </Suspense>
           } 

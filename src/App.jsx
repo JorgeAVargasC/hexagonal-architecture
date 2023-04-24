@@ -1,11 +1,8 @@
-import { useState } from 'react'
+import {lazy, Suspense} from 'react'
 
-import { AppRoutes } from './views/shared/routes/AppRoutes'
+const AppRoutes = lazy(() => import('./views/shared/routes/AppRoutes'))
 
-import reactLogo from './assets/react.svg'
-
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
     <>
@@ -13,5 +10,3 @@ function App() {
     </>
   )
 }
-
-export default App

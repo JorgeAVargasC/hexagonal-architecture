@@ -8,7 +8,7 @@ import { AppLayout } from '../layouts/AppLayout'
 const Home = lazy(() => import('../../home/pages/Home'))
 const CoursesRoutes = lazy(() => import('../../courses/routes/CoursesRoutes'))
 
-export const AppRoutes = () => {
+export default function AppRoutes () {
 
   const appRoutes = [
     {
@@ -26,7 +26,7 @@ export const AppRoutes = () => {
       <Route path='/' element={<AppLayout />}>
         {appRoutes.map((route, index) => (
           <Route key={index} path={route.path} element={
-            <Suspense fallback={<div className='text-sky-600 h-96 text-9xl'>Loading...</div>}>
+            <Suspense fallback={<div className='text-sky-600 h-96 text-9xl'>APP LOADING...</div>}>
               {route.element}
             </Suspense>
           }
