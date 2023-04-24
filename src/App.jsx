@@ -1,12 +1,11 @@
-import {lazy, Suspense} from 'react'
+import { lazy } from 'react';
 
-const AppRoutes = lazy(() => import('./views/shared/routes/AppRoutes'))
+const AppRoutes = lazy(() => import('./views/shared/routes/AppRoutes'));
 
 export default function App() {
-
   return (
     <>
       <AppRoutes />
     </>
-  )
+  );
 }
