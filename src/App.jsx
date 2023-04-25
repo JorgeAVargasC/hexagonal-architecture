@@ -1,6 +1,6 @@
 import { lazy } from 'react'
 
-const AppRoutes = lazy(() => import('./views/shared/routes/AppRoutes'))
+const AppRoutes = lazy(() => import('@/routes/AppRoutes'))
 
 export default function App() {
   return (

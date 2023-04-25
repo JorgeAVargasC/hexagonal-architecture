@@ -1,15 +1,14 @@
-import { lazy, Suspense } from 'react'
+import { Suspense, lazy } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
-import { routes } from '../config'
+import { routes } from '@/config'
 
-import { AppLayout } from '../layouts/AppLayout'
+import { AppLayout } from '@/layouts/AppLayout'
 
-const Home = lazy(() => import('../../home/pages/Home'))
-const CoursesRoutes = lazy(() => import('../../courses/routes/CoursesRoutes'))
+const Home = lazy(() => import('@/views/home/pages/Home'))
+const CoursesRoutes = lazy(() => import('@/views/courses/routes/CoursesRoutes'))
 
-export default function AppRoutes () {
-
+export default function AppRoutes() {
   const appRoutes = [
     {
       ...routes.home,
@@ -25,11 +24,18 @@ export default function AppRoutes () {
     <Routes>
       <Route path='/' element={<AppLayout />}>
         {appRoutes.map((route, index) => (
-          <Route key={index} path={route.path} element={
-            <Suspense fallback={<div className='text-sky-600 h-96 text-9xl'>APP LOADING...</div>}>
-              {route.element}
-            </Suspense>
-          }
+          <Route
+            key={index}
+            path={route.path}
+            element={
+              <Suspense
+                fallback={
+                  <div className='text-sky-600 h-96 text-9xl'>APP LOADING...</div>
+                }
+              >
+                {route.element}
+              </Suspense>
+            }
           />
         ))}
         <Route path='*' element={<Navigate to={routes.not_found.to} />} />
